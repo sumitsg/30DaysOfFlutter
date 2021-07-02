@@ -13,13 +13,13 @@ class MyDrawer extends StatelessWidget {
           padding: EdgeInsets.zero,
           children: [
             DrawerHeader(
-              
               padding: EdgeInsets.zero,
               child: UserAccountsDrawerHeader(
                 margin: EdgeInsets.zero,
                 accountName: Text("Sumit Ghadi"),
                 accountEmail: Text("sumitghad15@gmail.com"),
                 currentAccountPicture: CircleAvatar(
+                  radius: 100.0,
                   backgroundImage: NetworkImage(imagUrl),
                 ),
               ),

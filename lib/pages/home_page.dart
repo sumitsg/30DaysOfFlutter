@@ -1,27 +1,27 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_catelog/model/catelog.dart';
 import 'package:flutter_catelog/widgets/drawer.dart';
+import 'package:flutter_catelog/widgets/item_widget.dart';
 
 class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    final int day = 30;
-    final String name = "sumit";
-
+    final dummyList = List.generate(25, (index) => CatelogModel.items[0]);
     return Scaffold(
       appBar: AppBar(
         title: Text(
           "Catelog App",
         ),
       ),
-      body: Center(
-        child: Container(
-          child: Text(
-            "Welcome $name to $day days of flutter",
-            style: TextStyle(
-                fontWeight: FontWeight.w800,
-                fontSize: 22,
-                color: Colors.grey.shade800),
-          ),
+      body: Padding(
+        padding: const EdgeInsets.all(20.0),
+        child: ListView.builder(
+          itemCount: dummyList.length,
+          itemBuilder: (context, index) {
+            return ItemWidget(
+              item: dummyList[index],
+            );
+          },
         ),
       ),
       drawer: MyDrawer(),
