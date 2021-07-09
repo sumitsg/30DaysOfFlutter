@@ -3,6 +3,7 @@ import 'package:flutter_catelog/pages/login_page.dart';
 import 'package:flutter_catelog/pages/home_page.dart';
 import 'package:flutter_catelog/utilities/routes.dart';
 import 'package:flutter_catelog/widgets/themes.dart';
+// ignore: unused_import
 import 'package:google_fonts/google_fonts.dart';
 
 void main() {
