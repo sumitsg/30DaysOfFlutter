@@ -9,7 +9,9 @@ class HomePage extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text("Catelog App"),
+        title: Text(
+          "Catelog App",
+        ),
       ),
       body: Center(
         child: Container(
